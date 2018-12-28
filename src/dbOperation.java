@@ -103,14 +103,14 @@ class dbOperation {
         System.out.println("Number of lines: " + (excelContent.size() - 1));
 
         System.out.println();
-        System.out.printf("%-14s    %-14s", "Field", "Type");
+        System.out.printf("%-12s\t%-12s", "Field", "Type");
         System.out.println();
 
         // Print out table
         ArrayList<String> strings = excelContent.get(0);
 
-        for (int i = 0; i < type.size() - 1; i++) {
-            System.out.printf("%-14s    %-14s", strings.get(i), type.get(i));
+        for (int i = 0; i < type.size(); i++) {
+            System.out.printf("%-12s\t%-12s", strings.get(i), type.get(i));
             System.out.println();
         }
     }

@@ -87,6 +87,8 @@ public class xlsx2sqlite {
             excelContent.add(content);
         }
 
+//        System.out.println(excelContent);
+
         // Get current type
         ArrayList<String> type = new ArrayList<>();
 
@@ -122,6 +124,8 @@ public class xlsx2sqlite {
 
             type.add(colType);
         }
+
+//        System.out.println(type);
 
         // Insert xlsx file into table
         dbop.insertTable(databaseName, tableName, excelContent, type);
